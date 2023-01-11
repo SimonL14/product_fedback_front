@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Product feedback app</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="container gradient">
+            <p class="gradient-title">Frontend Mentor</p>
+            <p class="gradient-subtitle">Feedback Board</p>
+            <svg class="hamburger" width="32" height="32" viewBox="0 0 15 15"><path fill="#ffffff" fill-rule="evenodd" d="M1.5 3a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1h-12ZM1 7.5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5Zm0 4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5Z" clip-rule="evenodd"/></svg>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="container buttons">
+            <button class="filter">All</button>
+            <button class="filter">UI</button>
+            <button class="filter">UX</button>
+            <button class="filter">Enhancement</button>
+            <button class="filter">Bug</button>
+            <button class="filter">Feature</button>
+        </div>
+
+        <div class="container roadmap">
+            <div class="roadmap-header">
+                <h1 class="roadmap-title">Roadmap</h1>
+                <a class="roadmap-view">View</a>
+            </div>
+            
+
+            <ul>
+                <li class="task-state"style="color: #f49f85;">
+                    <svg width="10" height="10" viewBox="0 0 256 256"><circle cx="127" cy="129" r="81" fill="#f49f85" fill-rule="evenodd"/></svg>
+                    <p class="task-state-name">Planned</p>
+                    <p class="task-state-number">2</p>
+                </li>
+                <li class="task-state"style="color: #f49f85;">
+                    <svg width="10" height="10" viewBox="0 0 256 256"><circle cx="127" cy="129" r="81" fill="#ad1fea" fill-rule="evenodd"/></svg>
+                    <p class="task-state-name">In-Progress</p>
+                    <p class="task-state-number">3</p>
+                </li>
+                <li class="task-state"style="color: #f49f85;">
+                    <svg width="10" height="10" viewBox="0 0 256 256"><circle cx="127" cy="129" r="81" fill="#62bcfa" fill-rule="evenodd"/></svg>
+                    <p class="task-state-name">Live</p>
+                    <p class="task-state-number">1</p>
+                </li>
+                
+            </ul>
+            
+
+        </div>
+
+    </div><!-- Sidebar end -->
+
+    <div class="suggestions">
+        <!-- Add number of suggestions here --> 
+        <div class="container nav">
+            <ul>
+                <div class="hidden">
+                    <li class="suggest number_suggest hidden"><img src="assets/home/icon-suggestions.svg"/></li>
+                    <li class="suggest number_suggest hidden">Suggestions</li>
+                </div>
+                <li style="color: #647196;"class="suggest">Sort by:
+                <select>         
+                    <option>Most upvotes</option>
+                    <option>Least upvotes</option>
+                    <option>Most comments</option>
+                    <option>Least comments</option>
+                </select>
+                </li>
+
+                <li><button style="float:right" class="suggest add">+ Add Feedback</button></li>
+            </ul>
+        </div>
+
+        <div class="container topic">
+            <div class="upvote">
+            <button type="button" class="filter btn-upvote"><svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 6l4-4 4 4" stroke="#4661E6" stroke-width="2" fill="none" fill-rule="evenodd"/></svg><br>112</button>
+            </div>
+            <div class="topic-content">
+            <h1>Add tags for solutions</h1>
+                <p>Easier to search for solutions based on a specific stack.</p>
+                <button type="button" class="filter btn-topic-category">Enhancement</button>
+            </div>
+            <a class="commentSection"style="float:right"href="">
+                <svg width="18" height="16" xmlns="http://www.w3.org/2000/svg" class="svg">
+                <path d="M2.62 16H1.346l.902-.91c.486-.491.79-1.13.872-1.823C1.036 11.887 0 9.89 0 7.794 0 3.928 3.52 0 9.03 0 14.87 0 18 3.615 18 7.455c0 3.866-3.164 7.478-8.97 7.478-1.017 0-2.078-.137-3.025-.388A4.705 4.705 0 012.62 16z" fill="#CDD2EE" fill-rule="nonzero"/>
+                </svg>
+                <p class="commentNumber">2</p>
+            </a>
+        </div>
+        
+        <div class="container topic">
+            <div class="upvote">
+            <button type="button" class="filter btn-upvote"><svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 6l4-4 4 4" stroke="#4661E6" stroke-width="2" fill="none" fill-rule="evenodd"/></svg><br>112</button>
+            </div>
+            <div class="topic-content">
+            <h1>Add tags for solutions</h1>
+                <p>Easier to search for solutions based on a specific stack.</p>
+                <button type="button" class="filter btn-topic-category">Enhancement</button>
+            </div>
+            <a class="commentSection"style="float:right"href="">
+                <svg width="18" height="16" xmlns="http://www.w3.org/2000/svg" class="svg">
+                <path d="M2.62 16H1.346l.902-.91c.486-.491.79-1.13.872-1.823C1.036 11.887 0 9.89 0 7.794 0 3.928 3.52 0 9.03 0 14.87 0 18 3.615 18 7.455c0 3.866-3.164 7.478-8.97 7.478-1.017 0-2.078-.137-3.025-.388A4.705 4.705 0 012.62 16z" fill="#CDD2EE" fill-rule="nonzero"/>
+                </svg>
+                <p class="commentNumber">2</p>
+            </a>
+        </div>
+
+        <!-- No feedback -->
+        <div class="container no-suggestion">
+            <img src="assets/home/illustration-empty.svg"/>
+            <h1>There is no feedback yet.</h1>
+            <p>Got a suggestion? Found a bug that needs to be squashed? We love hearing about new ideas to improve our app.</p>
+
+            <button class="add">+ Add Feedback</button>
+        </div>
+        <!-- No feedback end -->
+    </div>
+</body>
+</html>

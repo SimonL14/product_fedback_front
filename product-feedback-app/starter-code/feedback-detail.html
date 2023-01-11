@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+        <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
+
+        <title>Frontend Mentor | Product feedback app</title>
+    </head>
+
+    <body>
+        <div class="feedback-details">
+            <div class="options">
+                <a href="index.html">Go Back</a>
+                <button class="filter edit-feedback">Edit Feedback</button>
+            </div>
+
+            <div class="container topic">
+            <div class="upvote">
+            <button type="button" class="filter btn-upvote"><svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 6l4-4 4 4" stroke="#4661E6" stroke-width="2" fill="none" fill-rule="evenodd"/></svg><br>99</button>
+            </div>
+            <div class="topic-content">
+            <h1>Add a dark theme option</h1>
+                <p>It would help people with light sensibilities and who prefer dark mode.</p>
+                <button type="button" class="filter btn-topic-category">Feature</button>
+            </div>
+            <a class="commentSection"style="float:right"href="feedback-detail.html">
+                <svg width="18" height="16" xmlns="http://www.w3.org/2000/svg" class="svg">
+                <path d="M2.62 16H1.346l.902-.91c.486-.491.79-1.13.872-1.823C1.036 11.887 0 9.89 0 7.794 0 3.928 3.52 0 9.03 0 14.87 0 18 3.615 18 7.455c0 3.866-3.164 7.478-8.97 7.478-1.017 0-2.078-.137-3.025-.388A4.705 4.705 0 012.62 16z" fill="#CDD2EE" fill-rule="nonzero"/>
+                </svg>
+                <p class="commentNumber">4</p>
+            </a>
+        </div>
+
+            <div class="container">
+                <div>
+                    <h1>4 Comments</h1>
+                    <div class="comment_card">
+                        <div class="profil">
+                            <img src="./assets/user-images/image-elijah.jpg" class="avatar">
+                            <div class="info">
+                                <p class="nom">Elijah Moss</p>
+                                <p class="pseudo">@hexagon.bestagon</p>
+                            </div>  
+                        </div>
+                        <a href="#" class="reply_comment">Reply</a>
+                    </div>
+
+                    <p class="text_comment">Also, please allow styles to be applied based on system preferences. I would love
+                    to be able to browse Frontend Mentor in the evening after my device’s dark mode turns on without the bright
+                    background it currently has.</p>
+                    <div class="comment-section">
+                        <textarea class="textarea">Type your comment here...</textarea>
+                        <button class="add post_comment">Post Reply</button>
+                    </div>
+                    <hr class="hr">
+
+                    <div class="comment_card">
+                        <div class="profil">
+                            <img src="./assets/user-images/image-james.jpg" class="avatar">
+                            <div class="info">
+                                <p class="nom">James Skinner</p>
+                                <p class="pseudo">@hummingbird1</p>
+                            </div>
+                        </div>
+                        <a href="#" class="reply_comment">Reply</a>
+                    </div>
+
+                    <div class="lign_comment">
+                        <p class="text_comment">Second this! I do a lot of late night coding and reading. Adding a dark theme
+                        can be great for preventing eye strain and the headaches that result. It’s also quite a trend with modern apps
+                        and apparently saves battery life.</p>
+
+                        <div class="comment_card">
+                            <div class="profil">
+                                <img src="./assets/user-images/image-anne.jpg" class="avatar">
+                                <div class="info">
+                                    <p class="nom">Anne Valentine</p>
+                                    <p class="pseudo">@annev1990</p>
+                                </div>
+                            </div>
+                            <a href="#" class="reply_comment">Reply</a>
+                        </div>
+                        <p class="text_comment"><a class="tag">@hummingbird1</a> While waiting for dark mode, there are browser
+                        extensions that will also do the job. Search for 'dark theme' followed by your browser. There might be a need
+                        to turn off the extension for sites with naturally black backgrounds though.</p>
+
+                        <div class="comment_card">
+                            <div class="profil">
+                                <img src="./assets/user-images/image-ryan.jpg" class="avatar">
+                                <div class="info">
+                                    <p class="nom">Ryan Welles</p>
+                                    <p class="pseudo">@voyager.344</p>
+                                </div>
+                            </div>
+                            <a href="#" class="reply_comment">Reply</a>
+                        </div>
+                        <p class="text_comment"><a class="tag">@annev1990</a>Good point! Using any kind of style extension is
+                        great and can be highly customizable, like the ability to change contrast and brightness. I'd prefer not to
+                        use one of such extensions, however, for security and privacy reasons.</p>
+
+                        <div class="comment-section">
+                            <textarea class="textarea">Type your comment here...</textarea>
+                            <button class="add post_comment">Post Reply</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <h1>Add Comment</h1>
+                    <form>
+                        <textarea class="text_comment" placeholder="Type your comment here" rows="5"></textarea>
+                    </form>
+                    <div class="options">
+                        <p>250 Characters left</p>
+                        <button class="add button_comment">Post Comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+<html

@@ -1,0 +1,352 @@
+body{
+    background-color: #f7f8fd;
+    font-family: 'Jost', sans-serif;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    
+}
+h1{
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    color : #3a4374;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #647196;
+}
+button{
+    margin : 5px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+}
+.container{
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+}
+.roadmap{
+    display: flex;
+    flex-direction: column;
+}
+.roadmap-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.roadmap-title{
+    flex-grow: 1;
+}
+.roadmap-view{
+    flex-grow: 1;
+    text-align: end;
+    text-decoration: underline;
+    color: #4661e6;
+    font-weight: bold;
+}
+.task-state{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.task-state-name{
+    margin-left: 10px;
+    flex-grow: 1;
+}
+.task-state-number{
+    text-align: end;
+    flex-grow: 1;
+    color: #647196;
+    font-weight: bold;
+}
+.topic{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.upvote{
+    margin-bottom: 50px;  
+}
+
+.topic-content{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    flex-grow: 2;
+    line-height: 10px;
+}
+.topic-content h1{
+    margin-bottom: 0px;
+}
+.topic-content p{
+    margin: 8px;
+}
+.btn-topic-category{
+    width: fit-content;
+}
+.opacity{
+    opacity: 50%;
+}
+.gradient{
+    color : white;
+    background-image: url("../assets/gradient.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+.gradient-title{
+    color: white;
+    font-weight: bold;
+    margin: 0px;
+    padding-top: 50px;
+   
+}
+.gradient-subtitle{
+    color: white;
+    opacity: 50%;
+    margin: 0px;
+}
+.hamburger{
+    visibility: hidden;
+}
+button.filter{
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #f2f4ff;
+    color: #4661e6;
+}
+button.filter:active{
+    background-color: #4661e6;
+    color: #f2f4ff;
+}
+.suggestions{
+    position: relative;
+}
+.nav{
+    background-color: #373f68;
+    color : #f2f4ff;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li.suggest{
+    display: inline;
+    float: left;
+    display: block;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+select{
+    border: none;
+    background: none;
+    color: #f2f4ff;
+}
+option{
+    background-color: #373f68;
+}
+button.add{
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #ad1fea;
+    color: #f2f4ff;
+}
+.no-suggestion{
+    text-align: center;
+}
+.commentSection{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+}
+.commentNumber{
+    color: #373f68;
+    font-weight: bold;
+    margin-left: 10px;
+}
+/*Feedback Details*/
+button.edit-feedback{
+    margin-right: 0px;
+}
+.reply{
+    display: none;
+}
+.text_comment{
+    width: 100%;
+    border-color: #4661e6;
+    border-radius: 5px;
+    background-color: #f7f8fd;
+    color: #647196;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+}
+.profil{
+    display: flex;
+    flex-direction: row;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.nom{
+    font-weight: bold;
+    line-height: 0px;
+}
+.pseudo{
+    line-height: 0px;
+}
+.avatar{
+    padding: 30px 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.reply_comment{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #4661e6;
+    font-weight: bold;
+}
+.comment-section{
+    display: flex;
+    flex-direction: row;
+}
+.textarea{
+    width: 80%;
+    min-height: 50px; 
+}
+.vl {
+    border-left: 1px solid rgb(238, 233, 233);
+    height: 370px;
+    position: relative;
+    left: 5%;
+    padding: 20px;
+  }
+@media (max-width: 375px){
+    /*Mobile*/
+    body{
+        max-width: 100%;
+        margin-top: 0px;
+    }
+    .buttons, .roadmap, .number_suggest{
+        display: none;
+    }
+    .gradient{
+        border-radius: 0px;
+        max-height: 50px;  
+        margin-bottom: 0px;
+    }
+    .gradient-title{
+        padding-top: 0px;
+    }
+    .hamburger{
+        visibility: visible;
+        position: absolute;
+        left: 85%;
+    }
+    .nav{
+        border-radius: 0px;
+    }
+    .hidden{
+        display: none;
+    }
+    button.add{
+        padding: 15px 19px;
+    }
+    .topic{
+        margin: auto;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .no-suggestion{
+        margin: auto;
+        width: 80%;
+    }
+    /*Feedback Details*/
+    .feedback-details{
+        margin : 5%;
+    }
+    .feature{
+        flex-direction: column-reverse;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 400px){
+    /*Index*/
+    body{
+        max-width: 90%;
+    }
+    .sidebar{
+        display: flex;
+        flex-direction: row;
+        max-height: 200px;
+    }
+    .gradient{
+        margin-right: 10px;
+    }
+    .gradient-title{
+        padding-top: 100px;
+    }
+    .bottom-text-tablet{
+        margin-top: 50px;   
+    }
+    .buttons{
+        max-width: 32%;
+        margin-right: 10px;
+    }
+    .roadmap{
+        min-width: 28%;
+    }
+    .suggestions{
+        align-content: center;
+        width: 100%;
+    }
+}
+@media (min-width: 1024px){
+    body{
+        display: flex;
+        flex-direction: row;
+    }
+    .sidebar{
+        width: 320px;
+        padding: 0px 20px;
+        flex-direction: column;
+    }    
+}
+
+/*
+.header-content{
+    flex-grow: 1;
+    margin: 10px;
+}
+.hamburger{
+    margin: 20px;
+}
+.sort{
+    background-color: #373f68;
+    display: flex;
+    align-items: center;
+}
+.button-add{
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: #f2f4ff;
+}
+.button-purple{
+    background-color: #ad1fea;
+}*/
+
+
